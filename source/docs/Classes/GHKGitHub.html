@@ -1,0 +1,807 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>GHKGitHub Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.0.5 (build 789)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">GitHubKit </a></h1>
+				<a id="developerHome" href="../index.html">LittleApps Inc.</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">GHKGitHub Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/accessToken">&nbsp;&nbsp;&nbsp;&nbsp;accessToken</option>
+	
+	<option value="//api/name/callbackUrl">&nbsp;&nbsp;&nbsp;&nbsp;callbackUrl</option>
+	
+	<option value="//api/name/clientId">&nbsp;&nbsp;&nbsp;&nbsp;clientId</option>
+	
+	<option value="//api/name/secret">&nbsp;&nbsp;&nbsp;&nbsp;secret</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/handleOpenURL:completionHandler:">&nbsp;&nbsp;&nbsp;&nbsp;- handleOpenURL:completionHandler:</option>
+	
+	<option value="//api/name/initWithClientId:secret:callbackUrl:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithClientId:secret:callbackUrl:</option>
+	
+	<option value="//api/name/isLoginFormURL:">&nbsp;&nbsp;&nbsp;&nbsp;- isLoginFormURL:</option>
+	
+	<option value="//api/name/loginURLWithScope:">&nbsp;&nbsp;&nbsp;&nbsp;- loginURLWithScope:</option>
+	
+	<option value="//api/name/logout">&nbsp;&nbsp;&nbsp;&nbsp;- logout</option>
+	
+	<option value="//api/name/sendAsynchronousRequest:completionHandler:">&nbsp;&nbsp;&nbsp;&nbsp;- sendAsynchronousRequest:completionHandler:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Initialization">Initialization</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Authentication">Authentication</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Network">Network</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/accessToken">accessToken</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/callbackUrl">callbackUrl</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/clientId">clientId</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/secret">secret</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/handleOpenURL:completionHandler:">handleOpenURL:completionHandler:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithClientId:secret:callbackUrl:">initWithClientId:secret:callbackUrl:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isLoginFormURL:">isLoginFormURL:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/loginURLWithScope:">loginURLWithScope:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/logout">logout</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sendAsynchronousRequest:completionHandler:">sendAsynchronousRequest:completionHandler:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="GHKGitHub Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">GHKGitHub Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">GHKGitHub.h<br />GHKGitHub.m</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>A GitHub REST API v3 Client</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/accessToken">&nbsp;&nbsp;accessToken</a></code>
+		<span class="tooltip"><p>Access Token</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/clientId">&nbsp;&nbsp;clientId</a></code>
+		<span class="tooltip"><p>Client ID</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/callbackUrl">&nbsp;&nbsp;callbackUrl</a></code>
+		<span class="tooltip"><p>Callback URL</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/secret">&nbsp;&nbsp;secret</a></code>
+		<span class="tooltip"><p>Secret Key</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Initialization" name="task_Initialization"></a>
+						<h3 class="subsubtitle task-title">Initialization</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithClientId:secret:callbackUrl:">&ndash;&nbsp;initWithClientId:secret:callbackUrl:</a></code>
+		<span class="tooltip"><p>Initialize new instance</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Authentication" name="task_Authentication"></a>
+						<h3 class="subsubtitle task-title">Authentication</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isLoginFormURL:">&ndash;&nbsp;isLoginFormURL:</a></code>
+		<span class="tooltip"><p>Returns is the URL a part of GitHub login form.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/handleOpenURL:completionHandler:">&ndash;&nbsp;handleOpenURL:completionHandler:</a></code>
+		<span class="tooltip"><p>Returns YES if the URL is auth dialog callback.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/loginURLWithScope:">&ndash;&nbsp;loginURLWithScope:</a></code>
+		<span class="tooltip"><p>Returns auth dialog URL</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/logout">&ndash;&nbsp;logout</a></code>
+		<span class="tooltip"><p>Revokes the access token</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Network" name="task_Network"></a>
+						<h3 class="subsubtitle task-title">Network</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sendAsynchronousRequest:completionHandler:">&ndash;&nbsp;sendAsynchronousRequest:completionHandler:</a></code>
+		<span class="tooltip"><p>Performs an asynchronous request</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/accessToken" title="accessToken"></a>
+	<h3 class="subsubtitle method-title">accessToken</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Access Token</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *accessToken</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">GHKGitHub.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/callbackUrl" title="callbackUrl"></a>
+	<h3 class="subsubtitle method-title">callbackUrl</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Callback URL</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *callbackUrl</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">GHKGitHub.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/clientId" title="clientId"></a>
+	<h3 class="subsubtitle method-title">clientId</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Client ID</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *clientId</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">GHKGitHub.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/secret" title="secret"></a>
+	<h3 class="subsubtitle method-title">secret</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Secret Key</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *secret</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">GHKGitHub.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/handleOpenURL:completionHandler:" title="handleOpenURL:completionHandler:"></a>
+	<h3 class="subsubtitle method-title">handleOpenURL:completionHandler:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns YES if the URL is auth dialog callback.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (BOOL)handleOpenURL:(NSURL *)<em>URL</em> completionHandler:(void ( ^ ) ( GHKAPIResponse *res ))<em>completionHandler</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>@params URL the URL
+@params completionHandler Callbacks when received access token</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">GHKGitHub.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithClientId:secret:callbackUrl:" title="initWithClientId:secret:callbackUrl:"></a>
+	<h3 class="subsubtitle method-title">initWithClientId:secret:callbackUrl:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Initialize new instance</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (id)initWithClientId:(NSString *)<em>clientId</em> secret:(NSString *)<em>secret</em> callbackUrl:(NSString *)<em>callbackUrl</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>clientId</em></dt>
+			<dd><p>The Client ID</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>secret</em></dt>
+			<dd><p>The Secret Key</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>callbackUrl</em></dt>
+			<dd><p>The Callback URL</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p><a href="https://github.com/settings/applications">https://github.com/settings/applications</a></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">GHKGitHub.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isLoginFormURL:" title="isLoginFormURL:"></a>
+	<h3 class="subsubtitle method-title">isLoginFormURL:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns is the URL a part of GitHub login form.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (BOOL)isLoginFormURL:(NSURL *)<em>URL</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">GHKGitHub.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/loginURLWithScope:" title="loginURLWithScope:"></a>
+	<h3 class="subsubtitle method-title">loginURLWithScope:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns auth dialog URL</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSURL *)loginURLWithScope:(NSArray *)<em>scope</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>scope</em></dt>
+			<dd><p>The scopes <a href="http://developer.github.com/v3/oauth/">http://developer.github.com/v3/oauth/</a>#scopes</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">GHKGitHub.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/logout" title="logout"></a>
+	<h3 class="subsubtitle method-title">logout</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Revokes the access token</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)logout</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">GHKGitHub.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sendAsynchronousRequest:completionHandler:" title="sendAsynchronousRequest:completionHandler:"></a>
+	<h3 class="subsubtitle method-title">sendAsynchronousRequest:completionHandler:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Performs an asynchronous request</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)sendAsynchronousRequest:(GHKAPIRequest *)<em>request</em> completionHandler:(void ( ^ ) ( GHKAPIResponse *res ))<em>completionHandler</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>request</em></dt>
+			<dd><p>The request to load</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completionHandler</em></dt>
+			<dd><p>The handler block to execute</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">GHKGitHub.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2012 LittleApps Inc.. All rights reserved. (Last updated: 2012-04-14)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 789)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>
