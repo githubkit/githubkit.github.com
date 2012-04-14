@@ -2,10 +2,10 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://yoursite.com
-title: My Octopress Blog
-subtitle: A blogging framework for hackers.
-author: Your Name
+url: http://githubkit.github.com
+title: GitHubKit
+subtitle: Cocoa Client Library for GitHub API Version 3
+author: Atsushi Nagase
 simple_search: http://google.com/search
 description:
 
